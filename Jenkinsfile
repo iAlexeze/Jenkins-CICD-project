@@ -37,11 +37,6 @@ pipeline{
   
             }
         }
-        stage(team-mail){
-            steps{
-            emailextrecipients([buildUser(ialexeze@gmail.com), developers(talk2alexeze@gmail.com), upstreamDevelopers(alexifesinachi@gmail.com)])
-            }
-        }
     }
 }
 
