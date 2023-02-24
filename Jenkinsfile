@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage(clone){
             steps{
-                  git 'https://github.com/iAlexeze/Trial-web-application.git'
+                git credentialsId: 'Ace-cred', url: 'git@github.com:iAlexeze/Trial-web-application.git'
             }
           
         }
