@@ -30,11 +30,16 @@ pipeline{
             }
            
         }
-        stage(deploy){
-              steps{
+        //stage(deploy){
+          //    steps{
            // deploy adapters: [tomcat8(credentialsId: 'tomcred', path: '', url: 'http://54.197.33.185:8080/')], contextPath: null, war: 'target/*war'
-                  deploy adapters: [tomcat8(credentialsId: 'tomcred', path: '', url: 'http://54.197.33.185:8080')], contextPath: '/target/*war', war: 'war'
+            //  deploy adapters: [tomcat8(credentialsId: 'tomcred', path: '', url: 'http://54.197.33.185:8080')], contextPath: '/target/*war', war: 'war'
   
+            //}
+        //}
+        stage(team-mail){
+            steps{
+            emailextrecipients([buildUser(ialexeze@gmail.com), developers(talk2alexeze@gmail.com), upstreamDevelopers(alexifesinachi@gmail.com)])
             }
         }
     }
