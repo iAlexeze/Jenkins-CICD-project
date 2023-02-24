@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>asam</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://52.90.250.214:8081/repository/Alexia/</url>
+	      <url>http://52.90.250.214:8081/repository/maven-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>asam</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://52.90.250.214:8081/repository/Alexia/</url>
+	      <url>http://52.90.250.214:8081/repository/maven-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
