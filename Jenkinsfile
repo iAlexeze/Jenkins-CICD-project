@@ -1,7 +1,7 @@
 pipeline{
     agent any
-    tool{
-        maven 'mvn'
+    tools{
+        mvn 'mvn'
     }
     stages{
         stage(vcs-clone){
