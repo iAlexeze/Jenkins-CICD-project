@@ -14,5 +14,15 @@ pipeline{
                 sh 'mvn clean package'
             }
         }
+        stage(quality_analysis){
+            steps{
+                sh 'mvn sonar:sonar'
+            }
+        }
+        stage(deploy_to_nexus){
+            steps{
+                sh 'mvn deploy'
+            }
+        }
     }
 }
