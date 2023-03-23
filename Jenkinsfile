@@ -19,10 +19,10 @@ pipeline{
                 sh 'mvn sonar:sonar'
             }
         }
-        stage(deploy_to_nexus){
-            steps{
-                sh 'mvn deploy'
-            }
-        }
+        //stage(deploy_to_nexus){
+          //  steps{
+            //    sh 'mvn deploy'
+           // }
+        //}
     }
 }
