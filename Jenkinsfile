@@ -4,7 +4,7 @@
         maven 'mvn'
     }
     stages{
-        stage('clone'){
+        stage(clone){
             steps{
                 git 'https://github.com/iAlexeze/Trial-web-application.git'
             }
