@@ -1,12 +1,12 @@
-pipeline{
-    agent any
+ pipeline{
+    agent any //means the agent should use "any available node"
     tools{
-        mvn 'mvn'
+        maven 'mvn'
     }
     stages{
-        stage(vcs-clone){
+        stage('clone'){
             steps{
-                git clone 'https://github.com/iAlexeze/Trial-web-application.git'
+                git 'https://github.com/iAlexeze/Trial-web-application.git'
             }
         }
     }
