@@ -4,12 +4,12 @@ pipeline{
         maven 'mvn'
     }
     stages{
-        stage(vcs-clone){
+        stage(vcs_clone){
             steps{
                 git 'https://github.com/iAlexeze/Trial-web-application.git'
             }
         }
-        stage(code-build){
+        stage(code_build){
             steps{
                 sh 'mvn clean package'
             }
