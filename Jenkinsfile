@@ -4,25 +4,30 @@ pipeline{
         maven 'mvn'
     }
     stages{
-        stage(vcs_clone){
+        stage(vcs clone){
             steps{
                 git 'https://github.com/iAlexeze/Trial-web-application.git'
             }
         }
-        stage(code_build){
+        stage(code build){
             steps{
                 sh 'mvn clean package'
             }
         }
-        stage(quality_analysis){
+        stage(quality analysis){
             steps{
                 sh 'mvn sonar:sonar'
             }
         }
-        stage(deploy_to_nexus){
+        stage(backup with nexus){
           steps{
              sh 'mvn deploy'
             }
+        }
+        stage(deploy to tomcat){
+            steps{
+               deploy adapters: [tomcat9(credentialsId: 'tomcat-cred', path: '', url: 'http://34.204.101.17:8080/')], contextPath: 'null', war: 'target/*war'
+           }
         }
     }
 }
