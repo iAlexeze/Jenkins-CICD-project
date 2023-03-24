@@ -26,7 +26,7 @@ pipeline{
         }
         stage(deploy_to_tomcat){
             steps{
-             deploy adapters: [tomcat9(credentialsId: 'tomcat-cred', path: '', url: '')], contextPath: '/iAlexapp', war: '/target/*war'
+             deploy adapters: [tomcat9(credentialsId: 'tomcat-cred', path: '', url: '')], contextPath: '/iAlexapp', war: 'target/*war'
             }
         }
     }
