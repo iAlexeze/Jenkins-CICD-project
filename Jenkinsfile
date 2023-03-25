@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('code clone'){
            steps{
-            git 'https://github.com/iAlexeze/Trial-web-application.git' 
+            git 'https://github.com/iAlexeze/Jenkins-CICD-project.git' 
             }
         }
       stage('code build'){
@@ -26,7 +26,7 @@ pipeline{
         }
       stage('prod deployment'){
           steps{
-        deploy adapters: [tomcat9(credentialsId: 'tomcat-cred', path: '', url: 'http://34.204.101.17:8080/')], contextPath: '/iAlexapp', war: 'target/*.war'
+        deploy adapters: [tomcat9(credentialsId: 'tomcat-cred', path: '', url: 'http://54.165.81.113:8080/')], contextPath: '/iAlexapp', war: 'target/*.war'
         }
         }
     }
