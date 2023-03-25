@@ -12,6 +12,8 @@ The repository contains the following files and folders:
 
 **tests/:** The test cases for the application.
 
+**pom.xml/:** The build script of the application.
+
 ## <span style="font-size:x-large;">Jenkins Pipeline</span>
 
 The Jenkins pipeline in this repository has the following stages:
