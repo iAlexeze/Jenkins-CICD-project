@@ -104,7 +104,7 @@
 	    <snapshotRepository>
 	      <id>ialexo</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://54.208.198.169:8081/repository/maven-snapshots/</url>
+	      <url>http://54.208.198.169:8081/repository/ialex-project/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
