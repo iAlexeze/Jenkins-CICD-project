@@ -16,7 +16,7 @@ pipeline{
         }
       stage('code quality analysis'){
         steps{
-            sh 'sonar:sonar'
+            sh 'mvn sonar:sonar'
             }
         }
       stage('artifact backup'){
