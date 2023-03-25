@@ -1,7 +1,10 @@
-Jenkins CI/CD Project Repository
-This repository is a Jenkins CI/CD project that automates the build, test, and deployment process of a software application.
 
-Project Structure
+**<span style="font-size:xx-large;">Jenkins-CI/CD-Project Repository</span>**
+
+This repository is a Jenkins CI/CD project that automates the build, test, and deployment process of a java-based software application.
+
+<span style="font-size:x-large;">Project Structure</span>
+
 The repository contains the following files and folders:
 
 Jenkinsfile: The Jenkins pipeline script that defines the steps to build, test, and deploy the application.
