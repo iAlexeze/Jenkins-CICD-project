@@ -4,6 +4,8 @@
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>/WEB-INF/mt-servlet.xml</param-value>
+    <param-name>ContextPath</param-name>
+    <param-value>/myapp</param-value>
   </context-param>
   <servlet>
     <servlet-name>mt</servlet-name>

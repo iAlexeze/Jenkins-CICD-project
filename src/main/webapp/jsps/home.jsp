@@ -13,7 +13,7 @@
 <h2 align="center"> 
 	This is the home of great innovations, and we are here to serve you with the best.
 	<br>
-	You can be sure that the Holyspirit is here.
+	We bring you only the best.
 	
 		</h2>
 	<h3 align="center">Let us know about your experience in the end.
@@ -25,9 +25,8 @@
 <hr>
 <div style="text-align: center;">
 	<span>
-		<img src="images/Asam.JPG" alt="Asam" width="150">
-		<h2>Prof. Esther Eze</h2>
-		<h3><small>Director<small></h3>
+		<img src="images/landmarklogo.jpg" alt="Asam" width="150">
+		
 	</span>
 	<br>
 	<span style="font-weight: bold;">
@@ -35,7 +34,7 @@
 		Toronto, Ontario, Canada
 		+1 437 215 2483,
 		<br>
-		<a href="mailto:talk2ezealex@gmail.com">Mail to ACE Technologies</a>
+		<a href="mailto:ialexeze@gmail.com">Mail to ACE Technologies</a>
 	</span>
 </div>
 <hr>
