@@ -110,7 +110,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalNameJenkins_CI/CD</finalName>
+		<finalName>Jenkins-CI/CD</finalName>
 		
 		<plugins>
 			<plugin>
