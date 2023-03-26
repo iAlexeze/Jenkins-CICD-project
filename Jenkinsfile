@@ -30,5 +30,17 @@ pipeline{
         }
         }
     }
+      post {
+        failure {
+            emailext body: "The build has failed. Please check the console output for details.",
+                     subject: "Build failed: ${currentBuild.fullDisplayName}",
+                     to: "ialexeze@gmail.com"
+        }
+       Success {
+            emailext body: "The build has been successfully completed. Please check the console output for details.",
+                     subject: "Build success: ${currentBuild.fullDisplayName}",
+                     to: "alexosinachi@gmail.com"
+        } 
+    }
 }
 
