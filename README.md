@@ -14,6 +14,8 @@ The repository contains the following files and folders:
 
 **pom.xml/:** The build script for the application.
 
+**CICD_Architecture:** This contains a diagram of the pipeline setup to aid better understanding of the CICD infrastructure.
+
 ## <span style="font-size:x-large;">Jenkins Pipeline</span>
 
 The Jenkins pipeline in this repository has the following stages:
